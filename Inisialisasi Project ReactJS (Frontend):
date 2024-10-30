@@ -1,0 +1,32 @@
+Buka folder client dan jalankan:
+
+npx create-react-app .
+
+Atur dependencies dan konfigurasi sesuai kebutuhan Anda.
+
+
+
+4. Inisialisasi Project Laravel (Backend):
+
+Buka folder server dan jalankan:
+
+laravel new .
+
+Sesuaikan dependencies yang diperlukan untuk mendukung API dan integrasi.
+
+
+
+5. Integrasi Pi Network SDK:
+
+Untuk mempercepat mainnet Pi Network, nantinya Anda bisa menambahkan SDK atau API yang dirilis oleh Pi Network saat mereka membuka mainnet.
+
+Pi Network SDK (jika ada) atau API bisa ditempatkan di bagian client/src untuk berinteraksi langsung dengan pengguna atau di backend server/routes untuk penanganan transaksi dan autentikasi.
+
+
+
+6. Dokumentasi Proyek:
+
+Buat dokumen README.md yang menjelaskan bagaimana cara mengonfigurasi dan menjalankan proyek.
+
+Tambahkan instruksi instalasi, konfigurasi .env, dan setup database agar mudah dikembangkan lebih lanjut.
+
