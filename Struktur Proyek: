@@ -1,0 +1,19 @@
+pi-network-marketplace/
+├── client/                # Bagian Frontend (ReactJS)
+│   ├── src/
+│   ├── public/
+│   ├── .env
+│   ├── package.json
+│   └── README.md
+├── server/                # Bagian Backend (Laravel)
+│   ├── app/
+│   ├── config/
+│   ├── public/
+│   ├── resources/
+│   ├── routes/
+│   ├── .env
+│   ├── composer.json
+│   └── README.md
+├── .gitignore
+├── README.md
+└── LICENSE
