@@ -1,0 +1,105 @@
+
+# Pi Network Marketplace
+
+**Pi Network Marketplace** adalah aplikasi marketplace yang mendukung pedagang kecil dan menengah dalam ekosistem Pi Network. Proyek ini dikembangkan menggunakan **ReactJS** untuk frontend dan **Laravel** untuk backend.
+
+## Daftar Isi
+- [Fitur](#fitur)
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
+- [Struktur Proyek](#struktur-proyek)
+- [Persyaratan](#persyaratan)
+- [Instalasi](#instalasi)
+- [Konfigurasi](#konfigurasi)
+- [Menjalankan Proyek](#menjalankan-proyek)
+- [Kontribusi](#kontribusi)
+- [Lisensi](#lisensi)
+
+## Fitur
+- Registrasi dan autentikasi pengguna.
+- Penambahan produk dan manajemen katalog.
+- Integrasi dengan Pi Network (akan dikembangkan untuk mainnet).
+- Sistem transaksi dan manajemen pesanan.
+- Halaman admin untuk pengelolaan pedagang dan pengguna.
+
+## Teknologi yang Digunakan
+- **Frontend**: ReactJS, CSS, JavaScript.
+- **Backend**: Laravel, MySQL.
+- **Autentikasi**: Pi Network (akan ditambahkan saat mainnet tersedia).
+- **API**: RESTful API untuk komunikasi antara frontend dan backend.
+
+## Struktur Proyek
+
+pi-network-marketplace/ ├── client/                # Frontend menggunakan ReactJS │   ├── src/ │   ├── public/ │   ├── .env │   ├── package.json │   └── README.md ├── server/                # Backend menggunakan Laravel │   ├── app/ │   ├── config/ │   ├── public/ │   ├── resources/ │   ├── routes/ │   ├── .env │   ├── composer.json │   └── README.md ├── .gitignore ├── README.md └── LICENSE
+
+## Persyaratan
+- **Node.js** >= 14.x
+- **Composer** >= 2.x
+- **PHP** >= 8.x
+- **MySQL** atau database lain yang didukung Laravel
+
+## Instalasi
+
+1. Clone repositori:
+   ```bash
+   git clone https://github.com/username/pi-network-marketplace.git
+   cd pi-network-marketplace
+
+2. Frontend (ReactJS):
+
+cd client
+npm install
+
+
+3. Backend (Laravel):
+
+cd ../server
+composer install
+cp .env.example .env
+php artisan key:generate
+
+
+
+Konfigurasi
+
+1. Frontend: Buat file .env di folder client dan tambahkan variabel lingkungan yang diperlukan.
+
+
+2. Backend: Konfigurasi file .env di folder server untuk mengatur database, key API Pi Network, dan lainnya.
+
+Contoh konfigurasi .env Laravel:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=pi_marketplace
+DB_USERNAME=root
+DB_PASSWORD=password
+
+
+
+Menjalankan Proyek
+
+1. Frontend:
+
+cd client
+npm start
+
+
+2. Backend:
+
+cd server
+php artisan serve
+
+
+
+Aplikasi akan berjalan pada http://localhost:3000 untuk frontend dan http://localhost:8000 untuk backend.
+
+Kontribusi
+
+Silakan kirimkan pull request untuk kontribusi. Pastikan untuk mengikuti standar kode yang telah ditetapkan di proyek ini.
+
+Lisensi
+
+MIT License
+
+Dokumen ini memberikan panduan lengkap untuk instalasi, konfigurasi, dan menjalankan proyek. Anda bisa menambahkan penjelasan lebih rinci sesuai dengan kebutuhan proyek Anda.
